@@ -1,9 +1,10 @@
 language: objective-c
+
 matrix:
   include:
-    osx_image: emma-benchmark-2c4g
-    osx_image: emma-benchmark-4c8g
-    osx_image: emma-benchmark-8c16g
+    - osx_image: emma-benchmark-2c4g
+    - osx_image: emma-benchmark-4c8g
+    - osx_image: emma-benchmark-8c16g
 
 env:
   - IOS_VER="9.2" FL_ARGS="verify"
