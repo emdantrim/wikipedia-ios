@@ -8,8 +8,10 @@ matrix:
     - osx_image: emma-benchmark-4c8g-xserve
     - osx_image: emma-benchmark-4c8g-macpro
     - osx_image: emma-benchmark-8c16g-macpro
-  env:
-  - IOS_VER="9.2" FL_ARGS="verify"
+
+env:
+  global:
+    - IOS_VER="9.2" FL_ARGS="verify"
     #  - IOS_VER="9.2" FL_ARGS="analyze"
     #  - IOS_VER="9.2" FL_ARGS="verify scheme:WikipediaRTL"
     #  - IOS_VER="8.4" FL_ARGS="verify sim_os:${IOS_VER}"
