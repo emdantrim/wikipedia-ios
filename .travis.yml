@@ -3,12 +3,11 @@ language: objective-c
 matrix:
   include:
     - osx_image: xcode7.3
-    - osx_image: emma-benchmark-2c4g
-    - osx_image: emma-benchmark-2c4g
-    - osx_image: emma-benchmark-4c8g
-    - osx_image: emma-benchmark-4c8g
-    - osx_image: emma-benchmark-8c16g
-    - osx_image: emma-benchmark-8c16g
+    - osx_image: emma-benchmark-2c4g-xserve
+    - osx_image: emma-benchmark-2c4g-macpro
+    - osx_image: emma-benchmark-4c8g-xserve
+    - osx_image: emma-benchmark-4c8g-macpro
+    - osx_image: emma-benchmark-8c16g-macpro
   env:
   - IOS_VER="9.2" FL_ARGS="verify"
     #  - IOS_VER="9.2" FL_ARGS="analyze"
